@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Poliedro Euleriano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Poliedro Euleriano</h1>
+        <p>Insira os valores de Vértices (V), Arestas (A) e Faces (F) para verificar se o poliedro é euleriano.</p>
+        
+        <form id="polyhedronForm">
+            <label for="vertices">Número de Vértices (V):</label>
+            <input type="number" id="vertices" required>
+
+            <label for="edges">Número de Arestas (A):</label>
+            <input type="number" id="edges" required>
+
+            <label for="faces">Número de Faces (F):</label>
+            <input type="number" id="faces" required>
+
+            <button type="button" onclick="verifyEuler()">Verificar</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
